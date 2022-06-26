@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+// PRIMARY
+$cyan: hsl(179, 62%, 43%);
+$bright-yellow: hsl(71, 73%, 54%);
+
+// NEUTRAL
+$light-gray: hsl(204, 43%, 93%);
+$grayish-blue: hsl(218, 22%, 67%);
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: Karla;
+}
+
+.container {
+    height: 100%;
+    background-color: $light-gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: 90%;
+    width: 90%;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 5px 0px $light-gray;
+
+    .first-section {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        padding: 40px 20px;
+        font-weight: 700;
+        background-color: hsl(0, 0, 100%);
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .title {
+            font-size: 1.5rem;
+            color: $cyan;
+        }
+
+        .money-back {
+            color: $bright-yellow;
+        }
+
+        .description {
+            color: $grayish-blue;
+            font-weight: 700;
+            line-height: 1.8;
+            margin-bottom: 0;
+        }
+    }
+
+    .second-section {
+        padding: 30px 20px;
+        background-color: $cyan;
+
+        .title {
+            font-size: 1.3rem;
+            color: hsl(0, 0, 100%);
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .price-per-month {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            color: $light-gray;
+            margin-bottom: 20px;
+        }
+
+        .price {
+            font-size: 2.5rem;
+            color: $light-gray;
+            font-weight: 700;
+        }
+
+        .month {
+            opacity: 0.5;
+        }
+
+        .access {
+            color: $light-gray;
+            margin-bottom: 20px;
+        }
+
+        .btn-signup {
+            cursor: pointer;
+            display: block;
+            height: 50px;
+            line-height: 50px;
+            font-weight: 700;
+            color: $light-gray;
+            width: 100%;
+            text-decoration: none;
+            background-color: $bright-yellow;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px 0px $grayish-blue;
+        }
+    }
+
+    .third-section {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 30px 20px;
+        background-color: #47B5FF;
+        color: $light-gray;
+
+        .title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .list {
+            opacity: 0.7;
+            list-style: none;
+
+            li {
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+
+    body {
+        height: 100vh;
+    }
+    .container {
+        .card {
+            display: grid;
+            width: 60%;
+            height: 60%;
+            grid-template-columns: 1fr;
+            margin-top: 0px;
+
+            section {
+                padding: 50px;
+            }
+
+            .second-section {
+                border-bottom-left-radius: 10px;
+                
+                .access {
+                    margin-bottom: 40px;
+                }
+            }
+
+            .third-section {
+                border-bottom-left-radius: 0px;
+            }
+
+            .col-2 {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+}

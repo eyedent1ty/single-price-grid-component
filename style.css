@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: Karla;
+}
+
+.container {
+  height: 100%;
+  background-color: hsl(204deg, 43%, 93%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 90%;
+  width: 90%;
+  border-radius: 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  box-shadow: 0px 0px 5px 0px hsl(204deg, 43%, 93%);
+}
+.card .first-section {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 40px 20px;
+  font-weight: 700;
+  background-color: hsl(0deg, 0%, 100%);
+}
+.card .first-section p {
+  margin-bottom: 20px;
+}
+.card .first-section .title {
+  font-size: 1.5rem;
+  color: hsl(179deg, 62%, 43%);
+}
+.card .first-section .money-back {
+  color: hsl(71deg, 73%, 54%);
+}
+.card .first-section .description {
+  color: hsl(218deg, 22%, 67%);
+  font-weight: 700;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+.card .second-section {
+  padding: 30px 20px;
+  background-color: hsl(179deg, 62%, 43%);
+}
+.card .second-section .title {
+  font-size: 1.3rem;
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.card .second-section .price-per-month {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: hsl(204deg, 43%, 93%);
+  margin-bottom: 20px;
+}
+.card .second-section .price {
+  font-size: 2.5rem;
+  color: hsl(204deg, 43%, 93%);
+  font-weight: 700;
+}
+.card .second-section .month {
+  opacity: 0.5;
+}
+.card .second-section .access {
+  color: hsl(204deg, 43%, 93%);
+  margin-bottom: 20px;
+}
+.card .second-section .btn-signup {
+  cursor: pointer;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  font-weight: 700;
+  color: hsl(204deg, 43%, 93%);
+  width: 100%;
+  text-decoration: none;
+  background-color: hsl(71deg, 73%, 54%);
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px hsl(218deg, 22%, 67%);
+}
+.card .third-section {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 30px 20px;
+  background-color: #47B5FF;
+  color: hsl(204deg, 43%, 93%);
+}
+.card .third-section .title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.card .third-section .list {
+  opacity: 0.7;
+  list-style: none;
+}
+.card .third-section .list li {
+  margin-bottom: 5px;
+}
+
+@media (min-width: 1000px) {
+  body {
+    height: 100vh;
+  }
+  .container .card {
+    display: grid;
+    width: 60%;
+    height: 60%;
+    grid-template-columns: 1fr;
+    margin-top: 0px;
+  }
+  .container .card section {
+    padding: 50px;
+  }
+  .container .card .second-section {
+    border-bottom-left-radius: 10px;
+  }
+  .container .card .second-section .access {
+    margin-bottom: 40px;
+  }
+  .container .card .third-section {
+    border-bottom-left-radius: 0px;
+  }
+  .container .card .col-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
